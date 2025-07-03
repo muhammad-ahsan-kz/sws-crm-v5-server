@@ -15,6 +15,9 @@ app.use("/", createProjectFolderRoute);
 const createCustomerFolderRoute = require("./routes/createCustomerFolder");
 app.use("/", createCustomerFolderRoute);
 
+const getGoogleDriveFilesAndFoldersRoute = require("./routes/getGoogleDriveFilesAndFoldersRoute");
+app.use("/", getGoogleDriveFilesAndFoldersRoute);
+
 const uploadFilesToCloudinaryRoute = require("./controllers/uploadFilesToCloudinaryController");
 app.use("/", uploadFilesToCloudinaryRoute);
 
